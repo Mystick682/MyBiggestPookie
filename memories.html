@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Memories 📸</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-wrapper">
+    <main class="main-content">
+      <div class="container">
+        <h1>Who Please!!!!! 📸</h1>
+        <p>Ohhhh Boyyyyy I only have few pictures of you</p>
+
+        <img src="images/smiles.jpg.jpg" alt="Your smile" class="memory-img" />
+
+        <video controls class="memory-video">
+          <source src="videos/video.mp4.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+
+        <a href="confession.html" class="btn">Final Confession ❤</a>
+      </div>
+    </main>
+
+    <footer class="footer">
+      &copy; 2025 Made with ❤ by Daniella's BiggestPookie
+    </footer>
+  </div>
+  <script>
+  const music = document.querySelector('audio');
+  music.volume = 0.5; // set volume between 0.0 (mute) and 1.0 (max)
+</script>
+<script>
+  const bgMusic = document.getElementById('bg-music');
+  const toggleBtn = document.getElementById('music-toggle');
+
+  let isPlaying = true;
+
+  toggleBtn.addEventListener('click', () => {
+    if (isPlaying) {
+      bgMusic.pause();
+      toggleBtn.textContent = '🔇';
+    } else {
+      bgMusic.play();
+      toggleBtn.textContent = '🔊';
+    }
+    isPlaying = !isPlaying;
+  });
+</script>
+</body>
+</html>

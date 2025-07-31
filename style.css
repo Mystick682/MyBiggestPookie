@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+
+/* RESET & BASE STYLES */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Quicksand', sans-serif;
+  background: linear-gradient(135deg, #fff0f5, #ffe6e6);
+  color: #2c2c2c;
+  scroll-behavior: smooth;
+}
+
+/* PAGE WRAPPER */
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* MAIN CONTENT */
+.main-content {
+  flex: 1;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 850px;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 40px 30px;
+  box-shadow: 0 10px 30px rgba(255, 105, 135, 0.15);
+  text-align: center;
+  animation: fadeIn 0.8s ease-out;
+}
+
+/* HEADERS & TEXT */
+h1 {
+  color: #ff4d6d;
+  font-size: 2.7em;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+p {
+  font-size: 1.15em;
+  color: #444;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* MEDIA STYLES */
+.memory-img,
+.memory-video {
+  max-width: 95%;
+  height: auto;
+  margin: 25px auto;
+  display: block;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.memory-img:hover,
+.memory-video:hover {
+  transform: scale(1.02);
+}
+
+/* BUTTON STYLES */
+.btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 14px 28px;
+  background-color: #ff4d6d;
+  color: white;
+  text-decoration: none;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 1.15em;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 24px rgba(255, 77, 109, 0.2);
+}
+
+.btn:hover {
+  background-color: #e60039;
+  transform: translateY(-2px) scale(1.03);
+}
+
+/* FOOTER */
+.footer {
+  padding: 15px;
+  font-size: 0.9em;
+  color: #888;
+  text-align: center;
+  background-color: #fff;
+  border-top: 1px solid #eee;
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* ANIMATIONS */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+#music-toggle {
+  position: fixed;
+  bottom: 100px;
+  right: 25px;
+  background-color: #ff4d6d;
+  color: white;
+  font-size: 20px;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(255, 77, 109, 0.3);
+  z-index: 1000;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#music-toggle:hover {
+  background-color: #e60039;
+  transform: scale(1.1);
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fefefe;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 800px;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
